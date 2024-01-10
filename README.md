@@ -108,64 +108,64 @@
 │   │   │   ├───TableCell
 │   │   │   │   └───index.ts
 │   │   │   └───index.ts
-│   │   ├───modules
-|   |   │   ├───dashboard
-|   |   │   │   ├───containers
-|   │   │   │   │   ├───dashboard
-|   │   │   │   │   │   ├───Content
-|   │   │   │   │   │   │   └───index.ts  
-|   │   │   │   │   │   └───index.ts
-|   │   │   │   │   ├───dashboard-preview
-|   │   │   │   │   │   ├───Content
-|   │   │   │   │   │   │   └───index.ts  
-|   │   │   │   │   │   └───index.ts       
-│   │   │   │   │   ├───shared
-|   │   │   │   │   │   ├───DashboardBarChart
-|   │   │   │   │   │   │   └───DashboardBarChart.tsx
-|   │   │   │   │   │   │   └───DashboardBarChart.test.tsx
-|   │   │   │   │   │   │   └───DashboardBarChart.types.ts
-|   │   │   │   │   │   │   └───styles.css
-|   │   │   │   │   │   │   └───index.ts
-|   │   │   │   │   │   └───index.ts
-|   |   │   │   ├───pages
-|   │   │   │   │   │   └───Dashboard.tsx
-|   │   │   │   │   │   └───DashboardPreview.tsx
-|   │   │   │   │   │   └───index.ts
-|   |   │   │   ├───usecases
-|   │   │   │   │   └───index.ts
-│   │   │   │   └───index.ts 
-|   |   │   ├───users
-|   |   │   │   ├───containers
-|   │   │   │   │   ├───users
-|   │   │   │   │   │   ├───Content
-|   │   │   │   │   │   │   └───index.ts  
-|   │   │   │   │   │   └───index.ts     
-│   │   │   │   │   ├───shared
-|   │   │   │   │   │   └───index.ts
-|   |   │   │   ├───pages
-|   │   │   │   │   │   └───users.tsx
-|   │   │   │   │   │   └───index.ts
-|   |   │   │   ├───usecases
-|   |   │   │   │   ├───users
-|   │   │   │   │   │   └───add.ts
-|   │   │   │   │   │   └───edit.ts
-|   │   │   │   │   │   └───delete.ts
-|   │   │   │   │   │   └───fetch-all.ts
-|   │   │   │   │   │   └───userSlice.ts
-|   │   │   │   │   │   └───index.ts
-|   │   │   │   │   └───index.ts
-│   │   │   │   └───index.ts
-|   |   │   ├───common
-|   |   │   │   ├───layout
-│   │   │   │   │   ├───NavBar
-│   │   │   │   │   │   └───NavBar.tsx
-│   │   │   │   │   │   └───NavBar.test.tsx
-│   │   │   │   │   │   └───NavBar.types.ts
+│   ├───modules
+|   │   ├───dashboard
+|   │   │   ├───containers
+│   │   │   │   ├───dashboard
+│   │   │   │   │   ├───Content
+│   │   │   │   │   │   └───index.ts  
+│   │   │   │   │   └───index.ts
+│   │   │   │   ├───dashboard-preview
+│   │   │   │   │   ├───Content
+│   │   │   │   │   │   └───index.ts  
+│   │   │   │   │   └───index.ts       
+│   │   │   │   ├───shared
+│   │   │   │   │   ├───DashboardBarChart
+│   │   │   │   │   │   └───DashboardBarChart.tsx
+│   │   │   │   │   │   └───DashboardBarChart.test.tsx
+│   │   │   │   │   │   └───DashboardBarChart.types.ts
 │   │   │   │   │   │   └───styles.css
 │   │   │   │   │   │   └───index.ts
 │   │   │   │   │   └───index.ts
+|   │   │   ├───pages
+│   │   │   │   │   └───Dashboard.tsx
+│   │   │   │   │   └───DashboardPreview.tsx
+│   │   │   │   │   └───index.ts
+|   │   │   ├───usecases
+│   │   │   │   └───index.ts
+│   │   │   └───index.ts 
+|   │   ├───users
+|   │   │   ├───containers
+│   │   │   │   ├───users
+│   │   │   │   │   ├───Content
+│   │   │   │   │   │   └───index.ts  
+│   │   │   │   │   └───index.ts     
+│   │   │   │   ├───shared
+│   │   │   │   │   └───index.ts
+|   │   │   ├───pages
+│   │   │   │   │   └───users.tsx
+│   │   │   │   │   └───index.ts
+|   │   │   ├───usecases
+|   │   │   │   ├───users
+│   │   │   │   │   └───add.ts
+│   │   │   │   │   └───edit.ts
+│   │   │   │   │   └───delete.ts
+│   │   │   │   │   └───fetch-all.ts
+│   │   │   │   │   └───userSlice.ts
+│   │   │   │   │   └───index.ts
+│   │   │   │   └───index.ts
 │   │   │   └───index.ts
-│   │   └───index.ts             
+|   │   ├───common
+|   │   │   ├───layout
+│   │   │   │   ├───NavBar
+│   │   │   │   │   └───NavBar.tsx
+│   │   │   │   │   └───NavBar.test.tsx
+│   │   │   │   │   └───NavBar.types.ts
+│   │   │   │   │   └───styles.css
+│   │   │   │   │   └───index.ts
+│   │   │   │   └───index.ts
+│   │   └───index.ts
+│   └───index.ts             
 │   ├───hooks
 │   │   └───custom-hooks.ts 
 │   │   └───index.ts  
