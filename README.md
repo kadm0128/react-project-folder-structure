@@ -1,8 +1,8 @@
 # React TypeScript Style Guide
 
-### Folder Structure
+## Folder Structure
 
-1. Simple Project Folder Structure
+###  1. Simple Project Folder Structure
 
 ```
 
@@ -14,6 +14,7 @@
 ├───src
 │   ├───routes
 │   │   └───index.ts
+│   │
 │   ├───components
 │   │   ├───Button
 │   │   │   ├───__snapshots__
@@ -24,18 +25,24 @@
 │   │   │   └───Button.types.ts
 │   │   │   └───index.ts
 │   │   │   └───styles.css
+│   │   │   
 │   │   ├───Table
 │   │   │   ├───TableRow
 │   │   │   │   └───index.ts
 │   │   │   ├───TableCell
 │   │   │   │   └───index.ts
 │   │   │   └───index.ts
+│   │   │   
+│   │   └───index.ts
+│   │
 │   ├───containers
-│   │   ├───dashboard
-│   │   │   ├───Content
-│   │   │   │   └───index.ts  
-│   │   │   └───index.ts     
-│   │   ├───shared
+│   │   ├───dashboard 
+│   │   │   └───index.ts
+│   │   │   
+│   │   ├───user 
+│   │   │   └───index.ts    
+│   │   │    
+│   │   ├───common
 │   │   │   ├───NavBar
 │   │   │   │   └───NavBar.tsx
 │   │   │   │   └───NavBar.test.tsx
@@ -43,22 +50,39 @@
 │   │   │   │   └───styles.css
 │   │   │   │   └───index.ts
 │   │   │   └───index.ts
-│   │   ├───users
-│   │   │   └───index.ts        
+│   │   │   
+│   │   └───index.ts  
+│   │      
+|   ├───pages
+│   │   └───DashboardPage.tsx
+│   │   └───UsersPage.tsx
+│   │   └───index.ts
+│   │
+│   ├───templates
+│   │   └───email-template.html
+│   │
 │   ├───hooks
 │   │   └───custom-hooks.ts 
-│   │   └───index.ts  
-│   ├───models
-│   │   └───common-models.ts  
-│   │   └───index.ts  
-|   ├───pages
-│   │   │   └───dashboard.tsx
-│   │   │   └───users.tsx
-│   │   │   └───index.ts
-|   ├───redux
+│   │   └───index.ts   
+│   │
+|   ├───states
 |   │   ├───actions
+│   │   │   └───index.ts
+│   │   │   
 |   │   ├───reducers
+│   │   │   └───index.ts
+│   │   │   
 |   │   ├───store
+│   │   │   └───index.ts
+│   │   │   
+│   │   └───index.ts 
+│   │
+│   ├───models
+│   │   └───user.ts
+│   │   └───dashboard.ts  
+│   │   └───common.ts    
+│   │   └───index.ts
+│   │
 |   ├───usecases
 |   │   ├───users
 │   │   │   └───add.ts
@@ -67,14 +91,56 @@
 │   │   │   └───fetch-all.ts
 │   │   │   └───userSlice.ts
 │   │   │   └───index.ts
+│   │   │   
+|   │   ├───dashboard
+│   │   │   └───index.ts
+│   │   │   
 │   │   └───index.ts
+│   │
+|   ├───services
+│   │   └───UserService.ts
+│   │   └───DashboardService.ts
+│   │   └───index.ts
+│   │
 |   ├───utils
-|   |   ├───common
+|   │   ├───constants
+│   │   │   └───user.ts
+│   │   │   └───dashboard.ts
 │   │   │   └───index.ts
-|   |   ├───components
-│   │   │   └───index.ts       
-|   |   ├───containers
+│   │   │   
+|   │   ├───user
 │   │   │   └───index.ts
+│   │   │   
+|   │   ├───dashboard
+│   │   │   └───index.ts
+│   │   │   
+|   │   ├───common
+│   │   │   └───index.ts
+│   │   │   
+│   │   └───index.ts
+│   │
+|   ├───core
+|   │   ├───errors
+│   │   │   └───api-errors.ts
+│   │   │   └───index.ts
+│   │   │   
+|   │   ├───libs
+│   │   │   └───axios.ts
+│   │   │   └───jsonwebtoken.ts
+│   │   │   └───index.ts
+│   │   │   
+|   │   ├───templates
+│   │   │   └───email-template.html
+│   │   │   
+|   │   ├───utils
+│   │   │   └───http.ts
+│   │   │   └───websocket.ts
+│   │   │   └───date.ts
+│   │   │   └───websocket.ts
+│   │   │   └───file.ts
+│   │   │   └───index.ts
+│   │   │   
+│   │   └───index.ts
 │   └───App.tsx
 │   └───main.tsx
 
@@ -187,3 +253,49 @@
 │   └───main.tsx
 
 ```
+
+### Explanation
+
+#### 1. Routes
+
+#### 2. Components
+
+   - All the base components will be place here.
+   - Each component should have a separate folder and all the component related files should be inside that folder.
+   - Each component should have a ``` test ``` file.
+
+#### 3. Pages
+
+   - File name should has ``` page ``` suffix.
+
+   - Each route has a specific page.
+
+      ``` /users ``` route will be bound to ``` UsersPage.tsx ``` page file.
+
+   - Each page can have a specific ``` container ``` folder.
+      ``` users ``` container folder includes all the container logics of the ``` UsersPage.tsx ```.
+
+#### 4. Containers
+
+   - Each page can have a specific ``` container ``` folder.
+      ``` users ``` container folder includes all the container logics of the ``` UsersPage.tsx ```.
+
+#### 5. Hooks
+
+   - All the custom react hooks will be place inside here.
+
+
+#### 6. States
+
+   - This will contain all the global states of the application.
+   - We can use any state management library such as ``` redux ```,  ``` hookstate ``` etc.
+
+#### 7. Models
+
+   - Contains ``` types ``` and ``` dto ``` types.
+
+#### 8. Usecases
+
+#### 9. Services
+
+   - Services is being used inside ``` usecases ```.
